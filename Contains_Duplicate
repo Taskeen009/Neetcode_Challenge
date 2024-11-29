@@ -1,0 +1,15 @@
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+      unordered_set<int> s;
+      for(auto it: nums)
+      s.insert(it);
+      if(nums.size()>s.size())
+      return true;
+      else 
+      return false;
+    }
+};
+
+t.c=O(N)
+s.c=O(N)
